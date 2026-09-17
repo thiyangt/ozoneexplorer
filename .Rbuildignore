@@ -1,3 +1,4 @@
 ^data-raw$
 ^ozoneexplorer\.Rproj$
 ^\.Rproj\.user$
+^README\.Rmd$
