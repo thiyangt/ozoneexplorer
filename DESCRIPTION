@@ -1,11 +1,10 @@
 Package: ozoneexplorer
-Title: What the Package Does (One Line, Title Case)
+Title: Load and Explore Ozone Data Through Visualizations
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person("Thiyanga S.", "Last", , "first.last@example.com", role = c("aut", "cre"))
+Description: ozoneexplorer provides tools for exploring and visualizing ozone observations retrieved from the World Ozone and Ultraviolet Radiation Data Centre (WOUDC). The package provides access to daily and monthly total column ozone data together with station, instrument, contributor, and observation metadata, and supports exploratory visualization of ozone patterns across stations and time. It includes visualizations such as time-series plots, spiral plots, and missing-data plots to help users examine temporal patterns, seasonal variation, and data completeness.
+License: GPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3

@@ -75,8 +75,8 @@ spiral_ozone <- function(data, station, years, ring_spacing = 2) {
       labels = years
     ) +
     ggplot2::scale_fill_viridis_c(
-      name = "Ozone (DU)",
-      option = "plasma"
+      name = "Ozone (DU)"
+    #  option = "plasma"
     ) +
     ggplot2::labs(
       title = paste("Daily Total Column Ozone —", station),
