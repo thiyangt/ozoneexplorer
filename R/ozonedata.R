@@ -52,11 +52,6 @@
 #' instruments, daily total column ozone observations, and monthly total
 #' column ozone summaries.
 #'
-#' The \code{source_file} variable identifies the original CSV file from
-#' which each record was obtained and is retained to support data provenance
-#' and reproducibility.
-#'
-#' @section WOUDC citation:
 #'
 #' When publishing data retrieved from the WOUDC, users are expected to
 #' acknowledge the contributors who author these data as the data source
@@ -73,7 +68,7 @@
 #' For a complete list of all contributors, see:
 #' https://www.woudc.org/en/contributors
 #'
-#' @section Citation of WOUDC products:
+
 #'
 #' When publishing products extracted from WOUDC, such as graphs, lists,
 #' maps or metadata, users are expected to acknowledge the WOUDC as the data

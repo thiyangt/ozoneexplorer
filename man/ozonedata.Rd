@@ -66,13 +66,6 @@ It includes information about observing stations, data contributors,
 instruments, daily total column ozone observations, and monthly total
 column ozone summaries.
 
-The \code{source_file} variable identifies the original CSV file from
-which each record was obtained and is retained to support data provenance
-and reproducibility.
-}
-\section{WOUDC citation}{
-
-
 When publishing data retrieved from the WOUDC, users are expected to
 acknowledge the contributors who author these data as the data source
 and the WOUDC, using the appropriate citation.
@@ -87,10 +80,6 @@ doi:10.14287/10000001
 
 For a complete list of all contributors, see:
 https://www.woudc.org/en/contributors
-}
-
-\section{Citation of WOUDC products}{
-
 
 When publishing products extracted from WOUDC, such as graphs, lists,
 maps or metadata, users are expected to acknowledge the WOUDC as the data
@@ -101,7 +90,6 @@ Organization-Global Atmosphere Watch Program (WMO-GAW)/World Ozone and
 Ultraviolet Radiation Data Centre (WOUDC). Retrieved \link{date}, from
 https://woudc.org.
 }
-
 \examples{
 data("ozonedata")
 
