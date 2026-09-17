@@ -1,0 +1,105 @@
+#' WOUDC Total Column Ozone Data
+#'
+#' A combined dataset of total column ozone observations retrieved from the
+#' World Ozone and Ultraviolet Radiation Data Centre (WOUDC). The dataset
+#' contains station and contributor metadata, instrument information, daily
+#' total column ozone observations, and monthly ozone summaries from multiple
+#' WOUDC data files.
+#'
+#' @format A data frame with 36 variables:
+#' \describe{
+#'   \item{x}{X coordinate of the station.}
+#'   \item{y}{Y coordinate of the station.}
+#'   \item{identifier}{Identifier of the observation or record.}
+#'   \item{dataset_id}{Identifier of the dataset.}
+#'   \item{station_id}{Identifier of the observing station.}
+#'   \item{station_name}{Name of the observing station.}
+#'   \item{station_gaw_id}{Global Atmosphere Watch (GAW) identifier of the station.}
+#'   \item{station_gaw_url}{URL associated with the GAW station.}
+#'   \item{contributor_name}{Name of the organization contributing the data.}
+#'   \item{contributor_id}{Identifier of the data contributor.}
+#'   \item{contributor_url}{URL associated with the data contributor.}
+#'   \item{country_id}{Identifier of the country.}
+#'   \item{country_name_en}{Country name in English.}
+#'   \item{country_name_fr}{Country name in French.}
+#'   \item{gaw_id}{Global Atmosphere Watch (GAW) identifier.}
+#'   \item{instrument_name}{Name of the ozone-measuring instrument.}
+#'   \item{instrument_model}{Model of the ozone-measuring instrument.}
+#'   \item{instrument_serial}{Serial number of the ozone-measuring instrument.}
+#'   \item{observation_date}{Date associated with the observation record.}
+#'   \item{daily_date}{Date of the daily ozone observation.}
+#'   \item{daily_wlcode}{Wavelength code associated with the daily ozone observation.}
+#'   \item{daily_obscode}{Observation code associated with the daily ozone observation.}
+#'   \item{daily_columno3}{Daily total column ozone, in Dobson Units (DU).}
+#'   \item{daily_stdevo3}{Standard deviation of the daily total column ozone measurements.}
+#'   \item{daily_utc_begin}{UTC start time of the daily observation period.}
+#'   \item{daily_utc_end}{UTC end time of the daily observation period.}
+#'   \item{daily_utc_mean}{Mean UTC time associated with the daily observations.}
+#'   \item{daily_nobs}{Number of observations contributing to the daily ozone value.}
+#'   \item{daily_mmu}{Daily MMU value associated with the observation.}
+#'   \item{daily_columnso2}{Daily total column sulfur dioxide, in Dobson Units (DU).}
+#'   \item{monthly_date}{Date associated with the monthly ozone record.}
+#'   \item{monthly_columno3}{Monthly total column ozone, in Dobson Units (DU).}
+#'   \item{monthly_stdevo3}{Standard deviation of the monthly total column ozone measurements.}
+#'   \item{monthly_npts}{Number of observations or points contributing to the monthly ozone value.}
+#'   \item{url}{URL associated with the original WOUDC data record.}
+#'   \item{source_file}{Name of the source CSV file from which the record was obtained.}
+#' }
+#'
+#' @details
+#' The dataset combines records retrieved from multiple WOUDC data files.
+#' It includes information about observing stations, data contributors,
+#' instruments, daily total column ozone observations, and monthly total
+#' column ozone summaries.
+#'
+#' The \code{source_file} variable identifies the original CSV file from
+#' which each record was obtained and is retained to support data provenance
+#' and reproducibility.
+#'
+#' @section WOUDC citation:
+#'
+#' When publishing data retrieved from the WOUDC, users are expected to
+#' acknowledge the contributors who author these data as the data source
+#' and the WOUDC, using the appropriate citation.
+#'
+#' For data originating from a large number of organizations:
+#'
+#' WMO/GAW Ozone Monitoring Community, World Meteorological Organization-
+#' Global Atmosphere Watch Program (WMO-GAW)/World Ozone and Ultraviolet
+#' Radiation Data Centre (WOUDC) [Data]. Retrieved [date], from
+#' https://woudc.org. A list of all contributors is available on the website.
+#' doi:10.14287/10000001
+#'
+#' For a complete list of all contributors, see:
+#' https://www.woudc.org/en/contributors
+#'
+#' @section Citation of WOUDC products:
+#'
+#' When publishing products extracted from WOUDC, such as graphs, lists,
+#' maps or metadata, users are expected to acknowledge the WOUDC as the data
+#' and product source, using the appropriate citation.
+#'
+#' Environment and Climate Change Canada, Toronto (n.d.). World Meteorological
+#' Organization-Global Atmosphere Watch Program (WMO-GAW)/World Ozone and
+#' Ultraviolet Radiation Data Centre (WOUDC). Retrieved [date], from
+#' https://woudc.org.
+#'
+#' @source
+#' World Ozone and Ultraviolet Radiation Data Centre (WOUDC),
+#' Environment and Climate Change Canada.
+#' \url{https://woudc.org/}
+#'
+#' @keywords datasets
+#'
+#' @examples
+#' data("ozonedata")
+#'
+#' head(ozonedata)
+#'
+#' # Daily ozone observations
+#' subset(ozonedata, !is.na(daily_columno3))
+#'
+#' # Monthly ozone observations
+#' subset(ozonedata, !is.na(monthly_columno3))
+#'
+"ozonedata"
