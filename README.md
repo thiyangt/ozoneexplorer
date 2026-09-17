@@ -65,6 +65,19 @@ ggplot(irene, aes(x = daily_date, y = daily_columno3)) +
 
 <img src="man/figures/README-unnamed-chunk-2-1.png" alt="" width="100%" />
 
+## Spiral Time Series Plot
+
+``` r
+spiral_ozone(
+  ozonedata,
+   station = "Irene",
+   years = 2015:2016,
+   ring_spacing = 2
+ )
+```
+
+<img src="man/figures/README-unnamed-chunk-3-1.png" alt="" width="100%" />
+
 ## Data attribution and citation
 
 The ozone data provided by `ozoneexplorer` are retrieved from the World

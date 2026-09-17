@@ -74,6 +74,16 @@ ggplot(irene, aes(x = daily_date, y = daily_columno3)) +
   )
 ```
 
+## Spiral Time Series Plot
+
+```{r}
+spiral_ozone(
+  ozonedata,
+   station = "Irene",
+   years = 2015:2016,
+   ring_spacing = 2
+ )
+```
 
 ## Data attribution and citation
 
