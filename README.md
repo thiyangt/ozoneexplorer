@@ -78,6 +78,23 @@ spiral_ozone(
 
 <img src="man/figures/README-unnamed-chunk-3-1.png" alt="" width="100%" />
 
+## Interactive Visualisation
+
+``` r
+interactive_ozone(
+  ozonedata,
+  station = "Irene",
+  years = 2014:2016,
+  ring_spacing = 2
+)
+```
+
+<video width="700" controls>
+
+<source src="data-raw/recording.mp4" type="video/mp4">
+
+</video>
+
 ## Data attribution and citation
 
 The ozone data provided by `ozoneexplorer` are retrieved from the World

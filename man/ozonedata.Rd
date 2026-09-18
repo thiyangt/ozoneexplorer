@@ -3,9 +3,9 @@
 \docType{data}
 \name{ozonedata}
 \alias{ozonedata}
-\title{WOUDC Total Column Ozone Data}
+\title{Total Ozone Daily Observations At Some Selected Locations}
 \format{
-A data frame with 36 variables:
+A dataframe with 36 variables:
 \describe{
 \item{x}{X coordinate of the station.}
 \item{y}{Y coordinate of the station.}
@@ -46,60 +46,24 @@ A data frame with 36 variables:
 }
 }
 \source{
-World Ozone and Ultraviolet Radiation Data Centre (WOUDC),
-Environment and Climate Change Canada.
-\url{https://woudc.org/}
+World Ozone and Ultraviolet Radiation Data Centre (WOUDC), Environment and Climate Change Canada. \url{https://woudc.org/}. For a complete list of all contributors, see:
+https://www.woudc.org/en/contributors
+
+JMA, & NASA-WFF. World Meteorological Organization-Global Atmosphere Watch Program (WMO-GAW)/World Ozone and Ultraviolet Radiation Data Centre (WOUDC). Retrieved October 24, 2013, from https://woudc.org. doi:10.14287/10000001
+
+WMO/GAW Ozone Monitoring Community, World Meteorological Organization-Global Atmosphere Watch Program (WMO-GAW)/World Ozone and Ultraviolet Radiation Data Centre (WOUDC). Retrieved October 24, 2013, from https://woudc.org. A list of all contributors is available on the website. doi:10.14287/10000001
+
+WMO/GAW UV Radiation Monitoring Community, World Meteorological Organization-Global Atmosphere Watch Program (WMO-GAW)/World Ozone and Ultraviolet Radiation Data Centre (WOUDC). Retrieved October 24, 2013, from https://woudc.org. A list of all contributors is available on the website. doi:10.14287/10000002
+
+Environment and Climate Change Canada, Toronto (n.d.). World Meteorological Organization-Global Atmosphere Watch Program (WMO-GAW)/World Ozone and Ultraviolet Radiation Data Centre (WOUDC). Retrieved October 24, 2013, from https://woudc.org.
 }
 \usage{
 ozonedata
 }
 \description{
-A combined dataset of total column ozone observations retrieved from the
-World Ozone and Ultraviolet Radiation Data Centre (WOUDC). The dataset
-contains station and contributor metadata, instrument information, daily
-total column ozone observations, and monthly ozone summaries from multiple
-WOUDC data files.
-}
-\details{
-The dataset combines records retrieved from multiple WOUDC data files.
-It includes information about observing stations, data contributors,
-instruments, daily total column ozone observations, and monthly total
-column ozone summaries.
-
-When publishing data retrieved from the WOUDC, users are expected to
-acknowledge the contributors who author these data as the data source
-and the WOUDC, using the appropriate citation.
-
-For data originating from a large number of organizations:
-
-WMO/GAW Ozone Monitoring Community, World Meteorological Organization-
-Global Atmosphere Watch Program (WMO-GAW)/World Ozone and Ultraviolet
-Radiation Data Centre (WOUDC) \link{Data}. Retrieved \link{date}, from
-https://woudc.org. A list of all contributors is available on the website.
-doi:10.14287/10000001
-
-For a complete list of all contributors, see:
-https://www.woudc.org/en/contributors
-
-When publishing products extracted from WOUDC, such as graphs, lists,
-maps or metadata, users are expected to acknowledge the WOUDC as the data
-and product source, using the appropriate citation.
-
-Environment and Climate Change Canada, Toronto (n.d.). World Meteorological
-Organization-Global Atmosphere Watch Program (WMO-GAW)/World Ozone and
-Ultraviolet Radiation Data Centre (WOUDC). Retrieved \link{date}, from
-https://woudc.org.
+Ozone related data retrieve from World Ozone and Ultraviolet Radiation Data Centre (WOUDC).
 }
 \examples{
 data("ozonedata")
-
-head(ozonedata)
-
-# Daily ozone observations
-subset(ozonedata, !is.na(daily_columno3))
-
-# Monthly ozone observations
-subset(ozonedata, !is.na(monthly_columno3))
-
 }
 \keyword{datasets}
