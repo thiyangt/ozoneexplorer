@@ -93,7 +93,7 @@ interactive_ozone(
 
 <source src="data-raw/recording.mp4" type="video/mp4">
 
-</video>
+Your browser does not support the video tag. </video>
 
 ## Data attribution and citation
 
